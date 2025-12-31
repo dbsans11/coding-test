@@ -1,22 +1,13 @@
 #include <iostream>
-#include <algorithm>
+#include <string>
 using namespace std;
-
-int main(void)
-{
-	int N, B; char temp; string res;
-	cin >> N >> B;
+int main() {
+	int N, B; cin >> N >> B;
+	string res = "";
 	while (N) {
-		if (N % B >= 0 && N % B <= 9) {
-			temp = (N % B) + '0';
-		}
-		else {
-			temp = ((N % B) - 10) + 'A';
-		}
-		res.push_back(temp);
+		int temp = N % B;
 		N /= B;
+		res = (char)(temp >= 10 ? temp - 10 + 'A' : temp + '0') + res;
 	}
-	reverse(res.begin(), res.end());
-	cout << res << endl;
-	return 0;
+	cout << res;
 }
