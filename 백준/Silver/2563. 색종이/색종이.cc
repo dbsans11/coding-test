@@ -1,19 +1,14 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
-int main(void)
-{
-	int paper[100][100] = { 0, };
-	int n, x, y, cnt=0; cin >> n;
-	while (n--) {
-		cin >> x >> y;
-		for (int q = y; q < y + 10; q++) {
-			for (int p = x; p < x + 10; p++) {
-				if (!paper[q][p]) {
-					paper[q][p] = 1; cnt++;
-				}
+int main() {
+	bool arr[100][100] = { 0, }; int T, cnt = 0; cin >> T;
+	while (T--) {
+		int x, y; cin >> x >> y;
+		for (int i = x; i < x + 10; ++i) {
+			for (int j = y; j < y + 10; ++j) {
+				if (!arr[i][j]) { arr[i][j] = 1; ++cnt; }
 			}
 		}
-	}
-	cout << cnt << endl;
-	return 0;
+	} cout << cnt;
 }
