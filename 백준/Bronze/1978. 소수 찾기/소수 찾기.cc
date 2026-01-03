@@ -1,17 +1,12 @@
 #include <iostream>
 using namespace std;
-
-int main(void)
-{
-	int n, sum=0; cin >> n;
-	while (n--) {
-		int tmp, i=2; cin >> tmp;
-		for (; i < tmp; i++) {
-			if (tmp % i == 0) break;
+int main() {
+	int N; cin >> N; int cnt = N;
+	while (N--) {
+		int T; cin >> T;
+		if (T == 1) --cnt;
+		for (int i = 2; i*i <= T; ++i) {
+			if (T % i == 0) { --cnt; break; }
 		}
-		if (i == tmp) sum++;
-	}
-	cout << sum << endl;
-
-	return 0;
+	} cout << cnt;
 }
