@@ -1,0 +1,1 @@
+main(n){scanf("%d",&n);printf("%lld\n3",(long)n*n*n);}
