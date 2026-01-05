@@ -1,0 +1,1 @@
+main(n){scanf("%d",&n);printf("%ld\n3",(long)(n-2)*(n-1)*n/6);}
