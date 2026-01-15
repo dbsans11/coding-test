@@ -1,8 +1,9 @@
 #include <iostream>
-#include <map>
+#include <algorithm>
 using namespace std;
 int main() {
-	ios::sync_with_stdio(false); cin.tie(NULL);
-	int N, M; map<int, int> m; cin >> N; for (int i = 0; i < N; ++i) { int t; cin >> t; m[t] = 1; }
-	cin >> M; for (int i = 0; i < M; ++i) { int t; cin >> t; cout << m[t] << ' '; }
+	ios::sync_with_stdio(0); cin.tie(NULL);
+	int N, M; cin >> N; int* a = new int[N]; for (int i = 0; i < N; ++i) cin >> a[i];
+	cin >> M; int* r = new int[M]; for (int i = 0; i < M; ++i) cin >> r[i];
+	sort(a, a + N); for (int i = 0; i < M; ++i) cout << binary_search(a, a + N, r[i]) << ' ';
 }
