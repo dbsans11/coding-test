@@ -1,8 +1,8 @@
 #include <iostream>
-#include <map>
+#include <algorithm>
 using namespace std;
 int main() {
 	ios::sync_with_stdio(false); cin.tie(NULL);
-	int N; map<int, int> m; cin >> N; while (N--) { int t; cin >> t; m[t] += 1; }
-	cin >> N; while (N--) { int t; cin >> t; cout << m[t] << ' '; }
+	int N, M; cin >> N; int* a = new int[N]; for (int i = 0; i < N; ++i) cin >> a[i];
+	cin >> M; sort(a, a + N); while (M--) { int t; cin >> t; cout << upper_bound(a, a + N, t) - lower_bound(a, a + N, t) << ' '; }
 }
