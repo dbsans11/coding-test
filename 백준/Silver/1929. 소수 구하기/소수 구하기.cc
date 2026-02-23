@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
-bool is_prime(int n) {
-	if (n == 2) return 1; else if (n == 1 || n % 2 == 0) return 0;
-	for (int i = 3; i * i <= n; i += 2) if (n % i == 0) return 0; return 1;
-}
+int a[1000001] = { 0, 1 };
 int main() {
-	int m, n; cin >> m >> n; for (int i = m; i <= n; ++i) if (is_prime(i)) cout << i << '\n';
+	int m, n; 
+	for (int i = 2; i <= 1000001; ++i) for (int j = 2; i*j <= 1000001; ++j) a[i * j] = 1;
+	cin >> m >> n; for (int i = m; i <= n; ++i) if (!a[i]) cout << i << '\n';
 }
