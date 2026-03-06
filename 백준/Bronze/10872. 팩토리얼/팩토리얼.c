@@ -1,0 +1,1 @@
+main(n){printf("%.f",tgamma(scanf("%d",&n)+n));}
