@@ -1,1 +1,1 @@
-solution = lambda message: len(message)*2
+solution = lambda message: len(message)<<1
