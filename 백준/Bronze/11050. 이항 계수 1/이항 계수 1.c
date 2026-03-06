@@ -1,0 +1,1 @@
+main(n,k){scanf("%d%d",&n,&k);printf("%.f",tgamma(n+1)/(tgamma(n-k+1)*tgamma(k+1)));}
