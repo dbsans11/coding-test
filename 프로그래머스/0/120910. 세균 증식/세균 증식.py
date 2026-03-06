@@ -1,1 +1,1 @@
-solution = lambda n, t: n*2**t
+solution = lambda n, t: n<<t
