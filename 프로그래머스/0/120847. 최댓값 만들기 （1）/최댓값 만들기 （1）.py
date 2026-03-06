@@ -1,0 +1,1 @@
+solution = lambda numbers: max(numbers) * sorted(numbers)[-2]
