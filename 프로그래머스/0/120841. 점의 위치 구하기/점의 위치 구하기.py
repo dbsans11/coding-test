@@ -1,1 +1,1 @@
-solution = lambda dot: (int(dot[1] < 0) + 1) * 2 - int(dot[0]*dot[1]>0)
+solution = lambda dot: [(3,2),(4,1)][dot[0]>0][dot[1]>0]
