@@ -1,0 +1,1 @@
+solution = lambda my_string: sum([int(x) for x in my_string if x.isdigit()])
