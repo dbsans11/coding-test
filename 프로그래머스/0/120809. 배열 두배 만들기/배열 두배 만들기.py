@@ -1,0 +1,1 @@
+solution = lambda numbers: [x*2 for x in numbers]
