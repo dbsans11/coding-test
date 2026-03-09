@@ -1,0 +1,1 @@
+solution = lambda dot: (int(dot[1] < 0) + 1) * 2 - int(dot[0]*dot[1]>0)
