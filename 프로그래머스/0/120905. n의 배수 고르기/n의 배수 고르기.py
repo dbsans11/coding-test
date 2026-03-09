@@ -1,1 +1,1 @@
-solution = lambda n, numlist: [x for x in numlist if x%n==0]
+solution = lambda n, numlist: list(filter(lambda x: x%n==0, numlist))
