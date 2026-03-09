@@ -1,0 +1,1 @@
+solution = lambda strlist: [len(x) for x in strlist]
