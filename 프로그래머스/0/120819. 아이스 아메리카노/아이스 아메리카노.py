@@ -1,0 +1,1 @@
+solution = lambda money: list(divmod(money,5500))
