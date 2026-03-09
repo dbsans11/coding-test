@@ -1,0 +1,1 @@
+solution = lambda s1, s2: len([x for x in s1 if x in s2])
