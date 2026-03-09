@@ -1,1 +1,1 @@
-solution = lambda strlist: [len(x) for x in strlist]
+solution = lambda strlist: list(map(len, strlist))
