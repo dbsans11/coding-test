@@ -1,0 +1,1 @@
+solution = lambda my_string, n: "".join(x*n for x in my_string)
