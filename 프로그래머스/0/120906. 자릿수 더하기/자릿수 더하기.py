@@ -1,6 +1,1 @@
-def solution(n):
-    n = str(n)
-    r = 0
-    for i in n:
-        r += int(i)
-    return r
+solution = lambda n: sum([int(x) for x in str(n)])
