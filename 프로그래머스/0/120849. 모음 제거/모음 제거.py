@@ -1,0 +1,1 @@
+solution = lambda my_string: ''.join(x for x in my_string if x not in "aeiou")
