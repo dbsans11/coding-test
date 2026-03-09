@@ -1,0 +1,1 @@
+solution = lambda n, numlist: [x for x in numlist if x%n==0]
