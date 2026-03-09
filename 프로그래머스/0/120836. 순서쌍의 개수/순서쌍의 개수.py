@@ -1,1 +1,1 @@
-solution = lambda n: 2 * len([x for x in range(1, int(n**0.5)+1) if n%x==0]) - int(n**0.5 == int(n**0.5))
+solution = lambda n: len(list(filter(lambda v: n % (v+1) == 0, range(n))))
