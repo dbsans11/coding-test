@@ -1,1 +1,1 @@
-solution = lambda my_string: ''.join(x.upper() if x.islower() else x.lower() for x in my_string)
+solution = lambda my_string: my_string.swapcase()
