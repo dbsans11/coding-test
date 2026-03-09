@@ -1,0 +1,1 @@
+solution = lambda num, n: 1*(num%n==0)
