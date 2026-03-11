@@ -1,0 +1,1 @@
+solution = lambda my_string, is_suffix: (is_suffix == my_string[len(my_string) - len(is_suffix):]) * 1
