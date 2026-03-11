@@ -1,0 +1,1 @@
+solution = lambda num_list: int(''.join(str(x) for x in num_list if x%2==1)) + int(''.join(str(x) for x in num_list if x%2==0))
