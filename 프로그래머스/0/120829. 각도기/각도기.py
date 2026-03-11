@@ -1,1 +1,5 @@
-solution = lambda angle: (angle//90)*2 + (angle%90>0)*1
+def solution(angle):
+    if angle == 180: return 4
+    if angle > 90: return 3
+    if angle == 90: return 2
+    return 1
