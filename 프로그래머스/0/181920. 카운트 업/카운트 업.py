@@ -1,0 +1,1 @@
+solution = lambda start_num, end_num: [x for x in range(start_num, end_num+1)]
