@@ -1,0 +1,1 @@
+solution = lambda a,b,flag: a+b if flag else a-b
