@@ -1,0 +1,1 @@
+solution = lambda my_string, target: (target in my_string)*1
