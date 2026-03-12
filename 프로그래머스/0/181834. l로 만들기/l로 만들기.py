@@ -1,0 +1,1 @@
+solution = lambda s: ''.join([(x if x > 'l' else 'l') for x in s])
