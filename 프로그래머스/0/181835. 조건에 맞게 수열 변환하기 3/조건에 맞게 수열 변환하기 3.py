@@ -1,0 +1,1 @@
+solution = lambda arr, k: [x*k for x in arr] if k%2 else [x+k for x in arr]
