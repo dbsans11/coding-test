@@ -1,5 +1,1 @@
-def solution(hp):
-    r=hp//5
-    hp%=5
-    r+=hp//3
-    return r+hp%3
+solution = lambda hp: hp//5 + hp%5//3 + hp%5%3
