@@ -1,1 +1,1 @@
-solution = lambda s: ''.join([(x if x > 'l' else 'l') for x in s])
+solution = lambda s: s.translate(str.maketrans('abcdefghijk', 'lllllllllll'))
