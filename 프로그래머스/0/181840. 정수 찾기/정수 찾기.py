@@ -1,0 +1,1 @@
+solution = lambda num_list, n: (n in num_list)*1
