@@ -1,0 +1,1 @@
+solution = lambda a1, a2: ((v1:=(len(a1), sum(a1))) > (v2:=(len(a2), sum(a2)))) - (v1 < v2)
