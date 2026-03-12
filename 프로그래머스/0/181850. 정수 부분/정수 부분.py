@@ -1,0 +1,1 @@
+solution = lambda f: int(f)
