@@ -1,0 +1,1 @@
+solution = lambda a, d: list(filter(lambda x: x not in d, a))
