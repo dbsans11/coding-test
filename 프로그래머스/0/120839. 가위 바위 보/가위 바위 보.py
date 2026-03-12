@@ -1,1 +1,1 @@
-solution = lambda rsp: ''.join([{"2":"0", "0":"5", "5":"2"}[x] for x in rsp])
+solution = lambda rsp: rsp.translate(str.maketrans('052', '520'))
