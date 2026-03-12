@@ -1,0 +1,1 @@
+solution = lambda my_string: sorted(map(int, filter(str.isdigit, my_string)))
