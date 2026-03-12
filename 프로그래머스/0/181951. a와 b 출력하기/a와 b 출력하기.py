@@ -1,0 +1,1 @@
+print("a = %d\nb = %d"%tuple(map(int, input().strip().split())))
