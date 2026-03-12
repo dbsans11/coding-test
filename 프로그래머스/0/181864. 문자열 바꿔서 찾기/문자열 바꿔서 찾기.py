@@ -1,0 +1,1 @@
+solution = lambda s, p: (p in s.translate(str.maketrans('AB','BA')))*1
