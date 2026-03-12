@@ -1,0 +1,1 @@
+solution = lambda s, p: (s[:len(p)] == p)*1
