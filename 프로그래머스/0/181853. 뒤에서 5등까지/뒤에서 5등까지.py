@@ -1,0 +1,1 @@
+solution = lambda n: sorted(n)[:5]
