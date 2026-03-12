@@ -1,0 +1,1 @@
+solution = lambda n: ''.join({1:"w",-1:"s",10:"d",-10:"a"}[n[i+1]-n[i]] for i in range(len(n)-1))
