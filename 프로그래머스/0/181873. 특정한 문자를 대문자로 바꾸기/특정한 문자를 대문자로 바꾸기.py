@@ -1,1 +1,1 @@
-solution = lambda s, a: s.replace(a, chr(ord(a)-32))
+solution = lambda s, a: s.replace(a, a.upper())
