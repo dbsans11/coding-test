@@ -1,1 +1,1 @@
-solution = lambda s, p: (s[:len(p)] == p)*1
+solution = lambda s, p: (s.startswith(p))*1
