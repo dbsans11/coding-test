@@ -1,2 +1,1 @@
-for i in range(1, int(input())+1):
-    print("*"*i)
+print('\n'.join(["*"*x for x in range(1, int(input())+1)]))
