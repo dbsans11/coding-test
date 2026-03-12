@@ -1,1 +1,1 @@
-solution = lambda n: str(n)
+solution = lambda n: f'{n}'
