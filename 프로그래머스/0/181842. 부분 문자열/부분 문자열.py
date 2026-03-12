@@ -1,0 +1,1 @@
+solution = lambda s1, s2: (s1 in s2)*1
