@@ -1,0 +1,1 @@
+solution = lambda m,o,s: m[:s]+o+m[s+len(o):]
