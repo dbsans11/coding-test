@@ -1,0 +1,1 @@
+solution = lambda s, a: s.replace(a, chr(ord(a)-32))
