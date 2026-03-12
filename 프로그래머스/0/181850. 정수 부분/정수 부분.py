@@ -1,1 +1,1 @@
-solution = lambda f: int(f)
+solution = lambda f: f//1
