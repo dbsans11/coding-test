@@ -1,1 +1,1 @@
-solution = lambda arr, k: [x*k for x in arr] if k%2 else [x+k for x in arr]
+solution = lambda arr, k: list(map(lambda x: x*k, arr)) if k%2 else list(map(lambda x: x+k, arr))
