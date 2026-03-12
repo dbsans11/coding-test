@@ -1,0 +1,1 @@
+solution = lambda cipher, code: cipher[code-1::code]
