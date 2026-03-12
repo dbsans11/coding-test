@@ -1,0 +1,1 @@
+solution = lambda a, d, inc: sum([(a+d*i)*n for i, n in enumerate(inc)])
