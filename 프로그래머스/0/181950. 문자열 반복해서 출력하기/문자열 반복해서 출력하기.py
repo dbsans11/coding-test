@@ -1,2 +1,2 @@
-s, n = map(str, input().strip().split())
+s, n = input().strip().split()
 print(s*int(n))
