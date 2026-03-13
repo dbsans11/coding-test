@@ -1,0 +1,1 @@
+solution = lambda l, r: [x for x in range(l, r+1) if set(str(x))<={'0','5'}] or [-1]
