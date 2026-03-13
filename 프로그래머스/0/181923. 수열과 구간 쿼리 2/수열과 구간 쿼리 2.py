@@ -1,0 +1,1 @@
+solution = lambda a, q: [min([x for x in a[s:e+1] if x>k], default=-1) for s,e,k in q]
