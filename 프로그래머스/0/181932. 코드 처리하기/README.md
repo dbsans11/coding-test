@@ -1,10 +1,10 @@
 # [level 0] 코드 처리하기 - 181932 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181932?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181932) 
 
 ### 성능 요약
 
-메모리: 9.65 MB, 시간: 11.33 ms
+메모리: 9.84 MB, 시간: 1.30 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 03월 13일 10:51:36
+2026년 03월 13일 10:57:32
 
 ### 문제 설명
 
