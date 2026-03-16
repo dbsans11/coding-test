@@ -1,1 +1,1 @@
-solution = lambda n: max(t:=sum([x for x in n[::2]]),sum(n)-t)
+solution = lambda n: max(sum(n[::2]), sum(n[1::2]))
