@@ -1,0 +1,1 @@
+solution = lambda s: [len(x) for x in s.split('x')]
