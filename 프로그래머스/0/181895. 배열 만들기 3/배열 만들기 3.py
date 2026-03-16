@@ -1,4 +1,1 @@
-def solution(a, i):
-    r=[]
-    for x,y in i: r+=a[x:y+1]
-    return r
+solution = lambda a, i: a[i[0][0]:i[0][1]+1]+a[i[1][0]:i[1][1]+1]
