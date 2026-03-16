@@ -1,0 +1,1 @@
+solution = lambda b: eval(b)
