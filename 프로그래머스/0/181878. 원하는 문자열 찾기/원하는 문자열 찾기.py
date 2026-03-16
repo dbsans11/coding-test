@@ -1,0 +1,1 @@
+solution = lambda s, p: (p.lower() in s.lower())*1
