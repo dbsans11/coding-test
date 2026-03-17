@@ -1,0 +1,1 @@
+solution = lambda str, p: ''.join([str[i][s:e+1] for i,(s, e) in enumerate(p)])
