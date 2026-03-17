@@ -1,0 +1,1 @@
+solution = lambda t, f: [v for i,v in enumerate(t) if not f[i]]
