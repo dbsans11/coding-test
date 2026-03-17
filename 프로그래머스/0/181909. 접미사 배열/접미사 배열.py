@@ -1,0 +1,1 @@
+solution = lambda s: sorted([s[x:] for x in range(len(s)-1,-1,-1)])
