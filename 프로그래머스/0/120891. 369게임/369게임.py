@@ -1,0 +1,1 @@
+solution = lambda o: sum([1 for c in str(o) if c in '369'])
