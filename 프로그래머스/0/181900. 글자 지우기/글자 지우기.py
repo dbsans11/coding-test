@@ -1,0 +1,1 @@
+solution = lambda ms, ind: ''.join([c for i,c in enumerate(ms) if i not in ind])
