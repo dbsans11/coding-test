@@ -1,0 +1,1 @@
+solution = lambda num, n: num[n:]+num[:n]
