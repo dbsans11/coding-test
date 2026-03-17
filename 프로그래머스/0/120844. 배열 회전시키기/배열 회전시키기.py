@@ -1,0 +1,1 @@
+solution = lambda n, d: n[1:] + [n[0]] if d=="left" else [n[-1]] + n[:-1]
