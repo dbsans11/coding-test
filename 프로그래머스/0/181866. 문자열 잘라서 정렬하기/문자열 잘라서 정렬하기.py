@@ -1,0 +1,1 @@
+solution = lambda s: sorted(filter(None, s.split('x')))
