@@ -1,1 +1,1 @@
-solution = lambda n: int(n)%9
+solution = lambda n: sum(map(int, n))%9
