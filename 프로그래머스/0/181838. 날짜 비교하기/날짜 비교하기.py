@@ -1,0 +1,1 @@
+solution = lambda d1, d2: (d1 < d2)*1
