@@ -1,0 +1,1 @@
+solution = lambda ints, k, s, l: [v for c in ints if (v:=int(c[s:s+l])) > k]
