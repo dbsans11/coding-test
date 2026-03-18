@@ -1,0 +1,1 @@
+solution = lambda nums: sum(n.bit_length()-1 for n in nums)
