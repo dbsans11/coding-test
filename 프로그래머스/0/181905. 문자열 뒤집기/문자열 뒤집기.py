@@ -1,0 +1,1 @@
+solution = lambda ms,s,e: ms[:s] + ms[s:e+1][::-1] + ms[e+1:]
