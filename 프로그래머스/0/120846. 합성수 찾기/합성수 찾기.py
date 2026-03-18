@@ -1,8 +1,6 @@
 def solution(n):
-    r=0
-    for i in range(4,n+1):
-        for j in range(2, int(i**(0.5))+1):
-            if i%j==0:
-                r+=1
-                break
-    return r
+    p = [0]*(n+1)
+    for i in range(2, int(n**0.5)+1):
+        if not p[i]:
+            for j in range(i*i, n+1, i): p[j] =1
+    return sum(p)
