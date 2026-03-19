@@ -1,0 +1,1 @@
+solution = lambda s: sum(map(int, filter(None, s.lower().translate(str.maketrans('abcdefghijklnmopqrstuvwxyz','**************************')).split('*'))))
