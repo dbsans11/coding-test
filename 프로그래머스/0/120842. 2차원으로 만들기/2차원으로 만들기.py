@@ -1,0 +1,1 @@
+solution = lambda nums, n: [nums[i:i+n] for i in range(0, len(nums)-n+1, n)]
