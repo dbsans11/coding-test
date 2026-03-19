@@ -1,0 +1,1 @@
+solution = lambda a: a + ([0]*(2**((len(a)-1).bit_length()) - len(a)))
