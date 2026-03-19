@@ -1,0 +1,1 @@
+solution = lambda ms: list(filter(None, ms.translate(str.maketrans('abc','***')).split('*'))) or ["EMPTY"]
