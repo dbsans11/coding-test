@@ -1,0 +1,1 @@
+solution = lambda ms, p: [ms[i:i+l] for l in [len(p)] for i in range(len(ms) - l + 1)].count(p)
