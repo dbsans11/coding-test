@@ -1,0 +1,1 @@
+solution = lambda i,j,k: sum(c.count(str(k)) for c in list(map(str,range(i,j+1))))
