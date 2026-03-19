@@ -1,1 +1,1 @@
-solution = lambda a: ''.join(map(str,a)).count('7')
+solution = lambda a: str(a).count('7')
