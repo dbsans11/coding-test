@@ -1,1 +1,2 @@
-solution = lambda s: ''.join(sorted([c for c in s if s.count(c)==1]))
+from collections import Counter
+solution = lambda s: ''.join(sorted(c for c,cnt in Counter(s).items() if cnt==1))
