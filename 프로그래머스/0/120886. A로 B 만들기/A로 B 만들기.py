@@ -1,0 +1,1 @@
+solution = lambda b, a: ({k: b.count(k) for k in b} == {k: a.count(k) for k in a})*1
