@@ -1,0 +1,1 @@
+solution = lambda ms, p: ms[:ms.rfind(p)+len(p)]
