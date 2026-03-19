@@ -1,0 +1,1 @@
+solution = lambda a: a[a.index(2):len(a) - a[::-1].index(2)] if 2 in a else [-1]
