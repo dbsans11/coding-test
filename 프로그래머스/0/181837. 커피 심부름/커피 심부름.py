@@ -1,3 +1,1 @@
-def solution(o):
-    d = {"iceamericano":4500, "americanoice":4500, "hotamericano":4500, "americanohot":4500, "icecafelatte":5000, "cafelatteice":5000, "hotcafelatte":5000, "cafelattehot":5000, "americano":4500, "cafelatte":5000, "anything":4500}
-    return sum([d[x] for x in o])
+solution = lambda o: sum([5000 if "latte" in x else 4500 for x in o])
