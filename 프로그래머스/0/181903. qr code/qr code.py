@@ -1,0 +1,1 @@
+solution = lambda q,r,code: code[r::q]
