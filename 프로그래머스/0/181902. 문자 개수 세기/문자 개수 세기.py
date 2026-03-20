@@ -1,0 +1,1 @@
+solution = lambda s: [s.count(chr(c)) for c in list(range(65, 65+26))+list(range(97,97+26))]
