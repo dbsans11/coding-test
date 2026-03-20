@@ -1,0 +1,1 @@
+solution = lambda n,sl,nums: nums[{1:slice(None,sl[1]+1), 2:slice(sl[0],None), 3:slice(sl[0],sl[1]+1), 4:slice(sl[0],sl[1]+1,sl[2])}[n]]
