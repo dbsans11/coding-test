@@ -1,0 +1,1 @@
+solution = lambda a,k: a if len((a:=list(dict.fromkeys(a))[:k]))==k else a+[-1]*(k-len(a))
