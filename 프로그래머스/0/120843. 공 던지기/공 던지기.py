@@ -1,0 +1,1 @@
+solution = lambda n, k: n[(k-1)*2%len(n)]
