@@ -1,3 +1,1 @@
-def solution(d):
-    d.sort()
-    return abs(d[0][0]-d[2][0]) * abs(d[0][1] - d[1][1])
+solution = lambda d: (max(d)[0]-min(d)[0])*(max(d)[1]-min(d)[1])
