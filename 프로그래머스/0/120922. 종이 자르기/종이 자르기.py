@@ -1,0 +1,1 @@
+solution = lambda m,n: n*m-1
