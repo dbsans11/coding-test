@@ -1,0 +1,1 @@
+solution = lambda p,k: [l for r in p for l in [''.join(map(lambda x: x*k,r))]*k]
