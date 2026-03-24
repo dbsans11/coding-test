@@ -1,1 +1,1 @@
-solution = lambda s: sorted(s)[0] * 2 - 1
+solution = lambda s: min(s) * 2 - 1
