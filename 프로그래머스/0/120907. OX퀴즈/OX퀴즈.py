@@ -1,0 +1,1 @@
+solution = lambda quiz: ['O' if eval((e:=q.split(' = '))[0])==int(e[1]) else 'X' for q in quiz]
