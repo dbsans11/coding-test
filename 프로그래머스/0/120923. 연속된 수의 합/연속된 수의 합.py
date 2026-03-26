@@ -1,0 +1,1 @@
+solution = lambda num, total: list(range((s:=total//num-num//2 + 1*(not num%2)), s+num))
