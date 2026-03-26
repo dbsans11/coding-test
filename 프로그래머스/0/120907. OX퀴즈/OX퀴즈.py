@@ -1,1 +1,7 @@
-solution = lambda quiz: ['O' if eval((e:=q.split(' = '))[0])==int(e[1]) else 'X' for q in quiz]
+def solution(quiz):
+    res = []
+    for q in quiz:
+        q=q.split(' = ')
+        e=q[0].split()
+        res.append('O' if (int(e[0])+int(e[2]) if e[1]=='+' else int(e[0])-int(e[2]))==int(q[1]) else 'X')
+    return res
