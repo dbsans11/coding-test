@@ -1,0 +1,1 @@
+solution = lambda nums, n: sorted(nums, key=lambda v: (abs(n-v), -v))
