@@ -1,13 +1,9 @@
+from collections import Counter
 def solution(a,b,c,d):
-    dset=set((a,b,c,d))
-    if (l:=len(dset)) == 1: return 1111*a
-    if l==4: return min(a,b,c,d)
-    cnt, dset = {k:(a,b,c,d).count(k) for k in dset}, list(dset)
-    if l==2:
-        if max(cnt.values())==3:
-            if cnt[dset[0]]==3: return (10*dset[0]+dset[1])**2
-            else: return (10*dset[1]+dset[0])**2
-        else: return (dset[0]+dset[1]) * abs(dset[0]-dset[1])
-    else: 
-        q,r = [k for k,v in cnt.items() if v==1]
-        return q*r
+    cnt = Counter([a,b,c,d]).most_common(4)
+    if (n:=len(cnt))==1: return 1111*cnt[0][0]
+    if n==2:
+        if cnt[0][1]==3: return (10*cnt[0][0]+cnt[1][0])**2
+        else: return (cnt[0][0]+cnt[1][0])*abs(cnt[0][0]-cnt[1][0])
+    if n==3: return cnt[1][0] * cnt[2][0]
+    else: return min(a,b,c,d)
