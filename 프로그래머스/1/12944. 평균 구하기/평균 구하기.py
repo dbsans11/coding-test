@@ -1,0 +1,1 @@
+solution = lambda a: sum(a)/len(a)
