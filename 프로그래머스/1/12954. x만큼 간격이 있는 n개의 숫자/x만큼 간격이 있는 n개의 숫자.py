@@ -1,0 +1,1 @@
+solution = lambda x,n: [i*x for i in range(1,n+1)]
