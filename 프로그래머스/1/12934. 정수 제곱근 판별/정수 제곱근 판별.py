@@ -1,0 +1,1 @@
+solution = lambda n: int((t+1)**2) if (t:=n**(0.5)).is_integer() else -1
