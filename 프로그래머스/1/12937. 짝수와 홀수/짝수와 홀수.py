@@ -1,0 +1,1 @@
+solution = lambda n: "Odd" if n%2 else "Even"
