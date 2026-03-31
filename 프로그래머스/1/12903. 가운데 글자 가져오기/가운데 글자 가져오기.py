@@ -1,0 +1,1 @@
+solution = lambda s: s[l//2] if (l:=len(s))%2 else s[l//2-1:l//2+1]
