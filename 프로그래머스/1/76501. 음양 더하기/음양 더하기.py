@@ -1,0 +1,1 @@
+solution = lambda a,s: sum([v if s[i] else -v for i,v in enumerate(a)])
