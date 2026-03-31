@@ -1,0 +1,1 @@
+solution = lambda s: (s:=s.lower()).count('p') == s.count('y')
