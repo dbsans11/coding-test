@@ -1,0 +1,1 @@
+solution = lambda a,d: sorted([i for i in a if i%d==0]) or [-1]
