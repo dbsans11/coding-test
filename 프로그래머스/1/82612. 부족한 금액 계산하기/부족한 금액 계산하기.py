@@ -1,0 +1,1 @@
+solution = lambda p,m,c: max(0, c * (2*p+p*(c-1))//2-m)
