@@ -1,0 +1,1 @@
+solution = lambda s: ''.join(sorted(s,reverse=1))
