@@ -1,0 +1,1 @@
+solution = lambda s: [-1 if v not in s[:i] else i-s[:i].rfind(v) for i,v in enumerate(s)]
