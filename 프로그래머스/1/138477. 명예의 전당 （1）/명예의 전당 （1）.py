@@ -1,8 +1,8 @@
+import heapq
 def solution(k,s):
-    t,r=[],[]
-    for i in s:
-        t.append(i)
-        t.sort(reverse=1)
-        if len(t)>k: t.pop()
-        r.append(t[-1])
+    q,r=[],[]
+    for v in s:
+        heapq.heappush(q,v)
+        if len(q)>k: heapq.heappop(q)
+        r.append(q[0])
     return r
