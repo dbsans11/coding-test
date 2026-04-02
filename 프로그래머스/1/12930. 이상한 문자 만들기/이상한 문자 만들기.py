@@ -1,0 +1,1 @@
+solution = lambda s: ' '.join(map(lambda x: ''.join([v.lower() if i%2 else v.upper() for i,v in enumerate(x)]), s.split(' ')))
