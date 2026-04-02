@@ -1,0 +1,1 @@
+solution = lambda s: s.isdigit() and ((l:=len(s))==4 or l==6) 
