@@ -1,0 +1,1 @@
+solution = lambda a,c: [sorted(a[x-1:y])[z-1] for x,y,z in c]
