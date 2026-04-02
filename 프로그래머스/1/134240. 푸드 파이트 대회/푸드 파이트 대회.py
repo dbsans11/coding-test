@@ -1,0 +1,1 @@
+solution = lambda f: (t:=''.join([str(i+1)*(v//2) for i,v in enumerate(f[1:])]))+'0'+t[::-1]
