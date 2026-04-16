@@ -1,4 +1,6 @@
 def solution(s):
-    s = [(x+y)/2 for x,y in s]
-    t=sorted(s,reverse=1)
-    return [t.index(v)+1 for v in s]
+    s=[x+y for x,y in s]
+    r = {}
+    for i,v in enumerate(sorted(s,reverse=1)):
+        if v not in r: r[v]=i+1
+    return [r[v] for v in s]
