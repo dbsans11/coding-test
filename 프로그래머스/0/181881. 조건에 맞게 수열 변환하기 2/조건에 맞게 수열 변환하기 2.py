@@ -1,7 +1,9 @@
-def solution(a):
-    cnt=0
-    while 1:
-        t = list(map(lambda v: v//2 if v>=50 and v%2==0 else v*2+1 if v<50 and v%2 else v, a))
-        if t==a: return cnt 
-        a=t
+def solution(arr):
+    cnt,temp,l = -1,[],len(arr)
+    while temp!=arr:
+        temp=arr[:]
+        for i in range(l):
+            if arr[i]>=50 and arr[i]%2==0: arr[i]//=2
+            elif arr[i]<50 and arr[i]%2: arr[i]=arr[i]*2+1
         cnt+=1
+    return cnt
