@@ -1,1 +1,2 @@
-solution = lambda a,k: a if len((a:=list(dict.fromkeys(a))[:k]))==k else a+[-1]*(k-len(a))
+def solution(arr,k):
+    return (t:=list(dict.fromkeys(arr)))[:k] +([-1]*(k-len(t)) if len(t)<k else [])
