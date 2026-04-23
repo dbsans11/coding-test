@@ -1,1 +1,2 @@
-solution = lambda nums, n: sorted(nums, key=lambda v: (abs(n-v), -v))
+def solution(num,n):
+    return sorted(num, key=lambda v: (abs(v-n), -v))
