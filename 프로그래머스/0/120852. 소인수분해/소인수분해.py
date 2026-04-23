@@ -1,8 +1,7 @@
 def solution(n):
-    r,i=[],2
-    while i*i<=n:
+    res=[]
+    for i in range(2, int(n**(0.5))+1):
         if n%i==0:
-            r.append(i)
+            res.append(i)
             while n%i==0: n//=i
-        i+=1
-    return r+[n] if n>1 else r
+    return res+[n] if n>1 else res
