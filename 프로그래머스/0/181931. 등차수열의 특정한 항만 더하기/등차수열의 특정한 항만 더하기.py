@@ -1,1 +1,5 @@
-solution = lambda a, d, inc: sum([(a+d*i)*n for i, n in enumerate(inc)])
+def solution(a,d,included):
+    r=0
+    for i,v in enumerate(included):
+        r+= v*(a+d*i)
+    return r
