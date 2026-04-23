@@ -1,6 +1,7 @@
 def solution(n):
-    i,v=0,0
-    while i<n:
-        v+=1
-        if v%3!=0 and '3' not in str(v): i+=1
-    return v
+    i,m=0,0
+    while i!=n:
+        m+=1
+        if m%3!=0 and '3' not in str(m):
+            i+=1
+    return m
