@@ -1,3 +1,3 @@
-def solution(i,e,n,m):
-    if i=="<": return (n<=m if e=="=" else n<m)*1
-    else: return (n>=m if e=="=" else n>m)*1
+def solution(iq,eq,n,m):
+    if iq=='<': return (n<=m)*1 if eq=='=' else (n<m)*1
+    else: return (n>=m)*1 if eq=='=' else (n>m)*1
