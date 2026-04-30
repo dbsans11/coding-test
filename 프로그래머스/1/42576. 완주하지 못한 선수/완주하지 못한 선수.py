@@ -1,5 +1,2 @@
 from collections import Counter
-def solution(p,c):
-    p,c=Counter(p),Counter(c)
-    for k,v in p.items():
-        if v!=c.get(k): return k
+solution = lambda p,c: (list((Counter(p)-Counter(c)).keys()))[0]
