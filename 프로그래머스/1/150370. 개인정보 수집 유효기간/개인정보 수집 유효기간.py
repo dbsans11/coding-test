@@ -1,27 +1,17 @@
 def solution(today, terms, privacies):
-    today,terms_dict,res=list(map(int,today.split('.'))),{},[]
-    for t in terms:
-        k,v=t.split()
-        terms_dict[k]=int(v)
+    today=list(map(int, today.split('.')))
+    todays=today[0]*28*12 + today[1]*28 + today[2]
     
-    for i,p in enumerate(privacies,start=1):
-        date,term=p.split()
-        date=list(map(int,date.split('.')))
-        date[1]+=terms_dict[term]
-        date[2]-=1
-        
-        if date[2]<1: 
-            date[1]-=1
-            date[2]=28
-        
-        if date[1]>12:
-            temp,date[1]=divmod(date[1],12)
-            date[0]+=temp
-        
-        if date[1]<1:
-            date[1]=12
-            date[0]-=1
-        
-        if date<today: res.append(i)
+    terms_dict={}
+    for term in terms:
+        k, v = term.split()
+        terms_dict[k] = int(v)*28
+    
+    res=[]
+    for idx, pri in enumerate(privacies, start=1):
+        date, term = pri.split()
+        date = list(map(int,date.split('.')))
+        days = date[0]*28*12 + date[1]*28 + date[2] + terms_dict[term] - 1
+        if days < todays: res.append(idx)
     
     return res
