@@ -1,15 +1,9 @@
 def solution(bandage, health, attacks):
     t,x,y = bandage
-    now, time, cnt = health, attacks[-1][0], 0
-    attacks = {r[0]:r[1] for r in attacks}
+    hp, now = health, 0
+    for atk in attacks:
+        hp = min(hp+x*(time:=atk[0]-now-1)+y*(time//t), health)
+        hp, now = hp - atk[1], atk[0]
+        if hp<=0: return -1
+    return hp
     
-    for i in range(1, time+1):
-        if i in attacks: 
-            now, cnt = now - attacks[i], 0
-            if now <= 0: return -1
-        else:
-            now, cnt = min(now+x, health), cnt+1
-            if cnt==t:
-                now, cnt = min(now+y, health), 0
-    return now
-            
