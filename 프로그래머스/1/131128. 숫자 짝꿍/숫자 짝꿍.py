@@ -1,6 +1,19 @@
-from collections import Counter
 def solution(X, Y):
-    X,Y,r=Counter(X),Counter(Y),''
-    for k in X.keys()&Y.keys():
-        r+=(k*min(X[k],Y[k]))
-    return ''.join(sorted(r,reverse=1)) if r.strip('0') else '0' if r else '-1'
+    answer = []
+    
+    for i in range(9, -1, -1):
+        char_i = str(i)
+        common_cnt = min(X.count(char_i), Y.count(char_i))
+        
+        if common_cnt > 0:
+            answer.append(char_i * common_cnt)
+    
+    if not answer:
+        return '-1'
+    
+    answer = ''.join(answer)
+    
+    if answer[0] == '0':
+        return '0'
+    
+    return answer
