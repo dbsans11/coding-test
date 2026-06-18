@@ -1,1 +1,3 @@
-solution = lambda p,m,c: max(0, c * (2*p+p*(c-1))//2-m)
+def solution(price, money, count):
+    total = price*(count*(1+count))//2
+    return max(0, total-money)
