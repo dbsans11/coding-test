@@ -1,6 +1,8 @@
 def solution(n):
-    t=''
-    while n:
-        t+=str(n%3)
-        n//=3
-    return int(t,3)
+    answer = ""
+    
+    while n > 0:
+        n, rem = divmod(n, 3)
+        answer += str(rem)
+    
+    return int(answer, 3)
