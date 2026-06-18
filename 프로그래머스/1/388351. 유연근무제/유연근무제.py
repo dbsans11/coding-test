@@ -1,13 +1,26 @@
 def solution(schedules, timelogs, startday):
-    res=0
-    for sch, tlg in zip(schedules, timelogs):
-        sch, temp=sch//100*60+sch%100+10, 1
-        for d,t in enumerate(tlg, start=startday):
-            d%=7
-            if d==6 or d==0: continue
-            t=t//100*60+t%100
-            if t>sch:
-                temp=0
+    def time_to_mm(time):
+        return (time//100)*60 + time%100
+    
+    answer = 0
+    
+    for log, sch in zip(timelogs, schedules):
+        is_success = True
+        sch = time_to_mm(sch) + 10
+        
+        for i, time in enumerate(log):
+            cur = (i + startday - 1) % 7 + 1
+            
+            if cur == 6 or cur == 7:
+                continue
+            
+            mm = time_to_mm(time)
+            
+            if mm > sch:
+                is_success = False
                 break
-        res+=temp
-    return res
+        
+        if is_success:
+            answer += 1
+    
+    return answer
