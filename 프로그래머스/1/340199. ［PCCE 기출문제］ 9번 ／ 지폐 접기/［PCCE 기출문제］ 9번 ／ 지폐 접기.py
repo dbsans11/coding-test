@@ -1,7 +1,11 @@
-def solution(wa,bi):
-    cnt=0
-    while min(wa)<min(bi) or max(wa)<max(bi):
-        if bi[0] > bi[1]: bi[0]//=2
-        else: bi[1]//=2
-        cnt+=1
-    return cnt
+def solution(wallet, bill):
+    answer = 0
+    
+    while min(bill) > min(wallet) or max(bill) > max(wallet):
+        if bill[0] > bill[1]:
+            bill[0] //=2
+        else:
+            bill[1] //=2
+        answer += 1
+    
+    return answer
