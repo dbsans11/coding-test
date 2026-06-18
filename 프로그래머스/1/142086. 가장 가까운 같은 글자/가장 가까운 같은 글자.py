@@ -1,1 +1,13 @@
-solution = lambda s: [-1 if v not in s[:i] else i-s[:i].rfind(v) for i,v in enumerate(s)]
+def solution(s):
+    answer = []
+    last_idx = {}
+    
+    for idx, char in enumerate(s):
+        if char in last_idx:
+            answer.append(idx - last_idx[char])
+        else:
+            answer.append(-1)
+        
+        last_idx[char] = idx
+    
+    return answer
