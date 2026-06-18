@@ -1,8 +1,13 @@
 import heapq
-def solution(k,s):
-    q,r=[],[]
-    for v in s:
-        heapq.heappush(q,v)
-        if len(q)>k: heapq.heappop(q)
-        r.append(q[0])
-    return r
+def solution(k, score):
+    answer = []
+    mh = []
+    
+    for s in score:
+        heapq.heappush(mh, s)
+        
+        if len(mh) > k:
+            heapq.heappop(mh)
+        
+        answer.append(mh[0])
+    return answer
