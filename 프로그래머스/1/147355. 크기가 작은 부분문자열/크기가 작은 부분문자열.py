@@ -1,5 +1,11 @@
-def solution(t,p):
-    r,l=0,len(p)
-    for i in range(len(t)-l+1):
-        if t[i:i+l] <= p: r+=1
-    return r
+def solution(t, p):
+    p_len = len(p)
+    p_int = int(p)
+    answer = 0
+    
+    for i in range(0, len(t) - p_len + 1):
+        temp = t[i:i+p_len]
+        if int(temp) <= p_int:
+            answer += 1
+    
+    return answer
